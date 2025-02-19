@@ -7,49 +7,121 @@
   <title>JavaScript Console.Log()</title>
   <link rel="stylesheet" href="site.css">
   <link rel="stylesheet" href="prism-vs.css">
+  <!-- Prism.js JS -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
 
 </head>
 
 <body>
   <main>
     <h1>JavaScript Console.Log()</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Table of Contents</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a class="table-link" href="#seo-links">SEO links</a></td>
+        </tr>
+        <tr>
+          <td><a class="table-link" href="#console-log" style="font-family: monospace;"><span>console.log()</span></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <section id="seo-links">
+      <ul>
+        <li><a href="https://ahrefs.com/">Ahrefs: Comprehensive SEO Tools and Resources</a></li>
+        <li><a href="https://trends.google.com/trends/">Google Trends: Analyze and Explore Popular Search Queries</a>
+        </li>
+        <li><a href="https://marketingplatform.google.com/about/analytics/">Google Analytics: Data Analysis and
+            Reporting for Websites</a></li>
+        <li><a href="https://backlinko.com/hub/seo/backlinks">Backlinko: Guide to Understanding and Building Quality
+            Backlinks</a></li>
+      </ul>
+    </section>
+    <section id="console-log">
+      <!-- code below -->
+      <h2>count how many links on a page</h2>
+      <div class="code-container">
+        <pre><code class="language-js">
+const links = document.querySelectorAll('a');
+const numberOfLinks = links.length;
+console.log(`There are ${numberOfLinks} links on this page.`);
+        </code></pre>
+      </div>
 
-    <!-- code below -->
-    <h2>count how many links on a page</h2>
-    <pre><code class="language-js">
-    // how many links are the page
-    
-    // Get all anchor elements (<a>) on the page
-      const links = document.querySelectorAll('a');
-    
-    // Count the number of links
-      const numberOfLinks = links.length;
-    
-    // Log the result to the console
-    
-    console.log(`There are ${numberOfLinks} links on this page.`);
-    
-    -> There are 486 links on this page.
+      <p>There are 486 links on this page.</p>
+
+      <h2>get document title for the current page</h2>
+
+      <pre><code class="language-js">
+  const title = document.title;
+  console.log(`Page title: ${title}`);
     </code></pre>
 
-    <h2>get document title for the current page</h2>
+      <p>Page title: How to study</p>
 
-    <pre><code class="language-js">
-      const title = document.title;
-      console.log(`Page title: ${title}`);
-      -> Page title: JavaScript Console.Log()
+      <h2>Meta description</h2>
+      <pre><code class="language-js">
+  const metaDescription = document.querySelector('meta[name="description"]').content;
+  console.log(`Meta description: ${metaDescription}`);
     </code></pre>
 
+      <p>Meta description: Dr. Vini Gora is a professional vocalist. She is a commercial contemporary singer based in
+        Los
+        Angeles. Her music is a beautiful blend of Classical & contemporary sounds.</p>
 
+      <h2>canonical link</h2>
 
+      <pre><code class="language-js">
+  const canonicalLink = document.querySelector('link[rel="canonical"]').href;
+  console.log(`Canonical link: ${canonicalLink}`);
+    </code></pre>
 
-    <!-- Prism.js JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
-</body>
+      <p>Canonical link: https://kironroy.dev/</p>
 
-</main>
+      <h2>get first and last paragraph</h2>
+      <pre><code class="language-js">
+  const paragraphs = document.querySelectorAll('p');
+  console.log(`First paragraph: ${paragraphs[0].textContent}`);
+  console.log(`Last paragraph: ${paragraphs[paragraphs.length - 1].textContent}`);
+    </code></pre>
 
+      <p> First paragraph:
+        Dr. Vini Gora, a New Delhi-born vocalist now residing in Los Angeles, is a classically trained singer
+        with a PhD in
+        Hindustani classical music. She is a disciple of Pt. Balmiki Sharma [disciple of Ustad Ghulam Hussain
+        Khan of Rampur Sehaswan Gharana and Pt. Kundan Lal Sharma Bhoot of Patiala Gharana].
+        Last paragraph:
+        click/tap
+        to call
+      </p>
+      <p>
+        Last paragraph:
+        click/tap
+        to call
+      </p>
+
+      <h2>Basic page structure</h2>
+      <pre><code class="language-js">
+  const sections = document.querySelectorAll('section');
+  const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+  const paragraphs = document.querySelectorAll('p');
+  console.log(`Total number of sections: ${sections.length}`);
+  console.log(`Total number of headers: ${headers.length}`);
+  console.log(`Total number of paragraphs: ${paragraphs.length}`);
+  </code></pre>
+    </section>
+    <p>
+      Total number of sections: 1
+      Total number of headers: 46
+      Total number of paragraphs: 23
+    </p>
+  </main>
 </body>
 
 </html>
