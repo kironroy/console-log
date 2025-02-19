@@ -19,20 +19,7 @@ a {
   text-decoration: none;
 }
 
-.copy-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-.copy-button:hover {
-  background-color: #0056b3;
-}
+
 
 #topBtn {
   display: none;
@@ -68,7 +55,7 @@ table {
   border-collapse: collapse;
 }
 th {
-  background-color: #000066;
+  background-color: #0e0e0e;
   color: #f9f906;
   padding: 10px;
   text-align: center;
