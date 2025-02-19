@@ -1,10 +1,19 @@
-document.querySelector(".copy-button").addEventListener("click", function () {
-  const code = document.querySelector(".language-js").innerText;
-  const textarea = document.createElement("textarea");
-  textarea.value = code;
-  document.body.appendChild(textarea);
-  textarea.select();
-  document.execCommand("copy");
-  document.body.removeChild(textarea);
-  alert("Code copied to clipboard!");
-});
+'use strict';
+
+let mybutton = document.getElementById('topBtn');
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  mybutton.style.display =
+    document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
+      ? 'block'
+      : 'none';
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

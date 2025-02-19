@@ -1,6 +1,6 @@
 # JavaScript Console.Log() 
 
-🏠 ## [Main Page](https://js-console-log.netlify.app/)
+## 🏠 [Main Page](https://js-console-log.netlify.app/)
 
 # 🔗 Links
 
