@@ -74,9 +74,14 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-align: left;
-  margin-left: 10px;
   background-color: #fff;
   padding: 10px;
+}
+
+.structured-data {
+
+  padding: 10px;
+  margin: 10px;
 }
 
 /* Media query for mobile devices */

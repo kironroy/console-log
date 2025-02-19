@@ -121,6 +121,84 @@ console.log(`There are ${numberOfLinks} links on this page.`);
       Total number of headers: 46
       Total number of paragraphs: 23
     </p>
+
+    <h2>get images and alternate text</h2>
+    <pre><code class="language-js">
+  const images = document.querySelectorAll('img');
+  images.forEach((image, index) => {
+  console.log(`Image ${index + 1} alt text: ${image.alt}`);
+    });
+  </code></pre>
+    <p>
+      Image 1 alt text: Fish
+      <br>
+      Image 2 alt text: Aquariums & Tanks
+      <br>
+      Image 3 alt text: Pumps & Flow
+      <br>
+      Image 4 alt text: Filtration & Skimmers
+      <br>
+      Image 5 alt text: Lighting
+
+    </p>
+
+    <pre><code class="language-js">
+  const structuredData = document.querySelectorAll('script[type="application/ld+json"]');
+  structuredData.forEach(data => console.log(`Structured data: ${data.textContent}`));
+
+    </pre></code>
+    <h2>get structure data in JSON format</h2>
+    <p class="structured-data">
+      Structured data:
+      <br>
+      {
+      <br>
+      &nbsp;&nbsp; "@context": "https://schema.org",
+      <br>
+      &nbsp;&nbsp; "@type": "Organization",
+      <br>
+
+      &nbsp;&nbsp; "name": "The Co",
+      <br>
+
+      &nbsp;&nbsp; "url": "https://co.com/",
+      <br>
+
+      &nbsp;&nbsp; "logo": "https://co.com/wp-content/uploads/2023/02/White-Text-Co.png",
+      <br>
+
+      &nbsp;&nbsp; "contactPoint": {
+      <br>
+
+      &nbsp;&nbsp; "@type": "ContactPoint",
+      <br>
+
+      &nbsp;&nbsp; "telephone": "562-555-5555",
+      <br>
+
+      &nbsp;&nbsp; "contactType": "technical support",
+      <br>
+
+      &nbsp;&nbsp; "contactOption": "TollFree",
+      <br>
+
+      &nbsp;&nbsp; "areaServed": "US",
+      <br>
+
+      &nbsp;&nbsp; "availableLanguage": "en"
+      <br>
+
+      },
+      <br>
+      <br>
+      &nbsp;&nbsp; "sameAs": [
+      &nbsp;&nbsp; "https://www.facebook.com/The-Co-104347378904055",
+      <br>
+
+      &nbsp;&nbsp; "https://www.instagram.com/co/"
+      <br>
+      ]
+    </p>
   </main>
 </body>
 
