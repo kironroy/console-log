@@ -1,5 +1,7 @@
 # JavaScript Console.Log() 
 
+🏠 ## [Main Page](https://js-console-log.netlify.app/)
+
 # 🔗 Links
 
 ## SEO
