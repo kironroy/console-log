@@ -5,17 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JavaScript Console.Log()</title>
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="prism-vs.css">
+
 </head>
 
 <body>
   <main>
     <h1>JavaScript Console.Log()</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate saepe quos iusto omnis itaque enim
-      perspiciatis. Similique ducimus consectetur voluptates?
-    </p>
 
-    <code>console.log(hshs)</code>
-  </main>
+    <!-- code below -->
+    <h2>count how many links on a page</h2>
+    <pre><code class="language-js">
+    // how many links are the page
+    
+    // Get all anchor elements (<a>) on the page
+      const links = document.querySelectorAll('a');
+    
+    // Count the number of links
+      const numberOfLinks = links.length;
+    
+    // Log the result to the console
+    
+    console.log(`There are ${numberOfLinks} links on this page.`);
+    
+    -> There are 486 links on this page.
+    </code></pre>
+
+    <h2>get document title for the current page</h2>
+
+    <pre><code class="language-js">
+      const title = document.title;
+      console.log(`Page title: ${title}`);
+      -> Page title: JavaScript Console.Log()
+    </code></pre>
+
+
+
+
+    <!-- Prism.js JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
+</body>
+
+</main>
 
 </body>
 
