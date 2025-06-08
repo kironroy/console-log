@@ -108,6 +108,50 @@ p {
   margin: 10px;
 }
 
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #181818;
+    color: #f1f1f1;
+  }
+  a {
+    color: #8ab4f8;
+  }
+  #topBtn {
+    background-color: #333;
+    color: #ffe600;
+    box-shadow: 0 8px 9px -9px #000a;
+  }
+  hr {
+    background-color: #888;
+  }
+  th {
+    background-color: #222;
+    color: #ffe600;
+    border-color: #444;
+  }
+  td {
+    border-color: #444;
+  }
+  tr:nth-child(odd) {
+    background-color: #232b36;
+  }
+  tr:nth-child(even) {
+    background-color: #1e2a22;
+  }
+  h1, h2, h3 {
+    background-color: #181818;
+    color: #ffe600;
+  }
+  p {
+    background-color: #232b36;
+    color: #f1f1f1;
+  }
+  .structured-data {
+    background-color: #232b36;
+    color: #f1f1f1;
+  }
+}
+
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
   html {
