@@ -9,9 +9,9 @@ html {
 .responsive {
   width: 80%;
   height: auto;
-display: block;
-margin-left: auto;
-margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
@@ -20,7 +20,16 @@ a {
   text-decoration: none;
 }
 
-
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+  background-color: #f0ffe9;
+  padding: 10px;
+}
 
 #topBtn {
   display: none;
@@ -138,7 +147,9 @@ p {
   tr:nth-child(even) {
     background-color: #1e2a22;
   }
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     background-color: #181818;
     color: #ffe600;
   }

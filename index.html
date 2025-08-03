@@ -124,6 +124,31 @@ console.log(`Canonical link: ${canonicalLink}`);
 
       <p>Canonical link: https://kironroy.dev/</p>
 
+      <h2>link Analysis</h2>
+      <pre><code class="language-js">
+const links = document.querySelectorAll('a');
+console.log(`Total links: ${links.length}`);
+        
+links.forEach((link, i) => {
+console.log(`Link ${i + 1}: ${link.href}`);});
+</code></pre>
+      <ul class="no-bullets">
+        <li>Link 1: https://kironroydev.netlify.app/#about</li>
+        <li>Link 2: https://kironroydev.netlify.app/#projects</li>
+        <li>Link 3: https://kironroydev.netlify.app/#contact</li>
+        <li>Link 4: https://github.com/kironroy</li>
+        <li>Link 5: https://kironroy.dev/art</li>
+        <li>Link 6: https://kironroyblog.netlify.app/</li>
+        <li>Link 7: https://books-database.netlify.app/</li>
+        <li>Link 8: https://js-console-log.netlify.app/</li>
+        <li>Link 9: https://hadden.netlify.app/</li>
+        <li>Link 10: https://mathematics-six.vercel.app/</li>
+        <li>Link 11: https://treesinfo.netlify.app/</li>
+        <li>Link 12: https://vinigora.netlify.app/</li>
+        <li>Link 13: https://kironroy.dev/content</li>
+      </ul>
+
+
       <h2>get first and last paragraph</h2>
       <pre><code class="language-js">
 const paragraphs = document.querySelectorAll('p');
